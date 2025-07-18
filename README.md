@@ -1,75 +1,83 @@
-# Nuxt Minimal Starter
+# Portofolio & Blog Pribadi dengan Nuxt
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Ini adalah proyek "Hello World!" versi powerful yang saya bangun untuk mempelajari dan mendalami framework Nuxt. Proyek ini berupa situs portofolio pribadi yang juga berfungsi sebagai blog, di mana semua konten artikel diambil dari file Markdown lokal.
 
-## Setup
+Proyek ini dibangun dari awal dengan panduan langkah demi langkah, mencakup berbagai rintangan teknis dan solusinya, mulai dari masalah lingkungan development hingga integrasi library UI.
 
-Make sure to install dependencies:
+![Screenshot Halaman Utama Proyek](https://imgur.com/a/nuxt-portfolio-blog-LDfJP2l)
 
-```bash
-# npm
-npm install
+---
 
-# pnpm
-pnpm install
+## ✨ Fitur & Konsep yang Dipelajari
 
-# yarn
-yarn install
+Proyek ini mengimplementasikan berbagai konsep inti dan modern dari Nuxt:
 
-# bun
-bun install
-```
+- **Struktur Proyek Fundamental**: Memahami kegunaan folder `pages`, `components`, dan `layouts`.
+- **File-Based Routing**: Membuat rute dan halaman secara otomatis hanya dengan membuat file `.vue`.
+- **Server Routes (API)**: Membangun API backend sendiri di dalam Nuxt menggunakan folder `server/api/` untuk membaca file Markdown secara manual dari server.
+- **Data Fetching**: Menggunakan `useFetch` untuk mengambil data dari API endpoint internal.
+- **Dynamic Routes**: Membuat halaman detail yang dinamis untuk setiap artikel (contoh: `/blog/[slug]`).
+- **Komponen & Props**: Membuat komponen yang dapat digunakan kembali seperti `ArticleCard` (sebelum diganti PrimeVue).
+- **Integrasi UI Library**: Berhasil mengintegrasikan **PrimeVue** ke dalam proyek Nuxt, termasuk:
+  - Konfigurasi modul `nuxt-primevue`.
+  - Menggunakan komponen seperti `Menubar`, `Button`, `Avatar`, `Card`, `Panel`, dan `Breadcrumb`.
+  - Mengatasi masalah kompatibilitas versi dan styling.
+- **Styling dengan Tailwind CSS**: Menggunakan Tailwind CSS untuk styling modern dan cepat, termasuk penggunaan `@apply` di dalam komponen Vue.
+- **Animasi & Transisi**: Mengimplementasikan transisi antar halaman (`pageTransition`) global menggunakan CSS untuk memberikan pengalaman pengguna yang lebih halus.
+- **SEO & Meta Tags**: Mengelola `<title>` dan `<meta>` tags secara dinamis di setiap halaman menggunakan `useHead`.
+- **Problem Solving**: Melakukan debugging intensif terkait masalah lingkungan, dependensi, dan kompatibilitas versi.
 
-## Development Server
+---
 
-Start the development server on `http://localhost:3000`:
+## 🛠️ Teknologi yang Digunakan
 
-```bash
-# npm
-npm run dev
+- **Framework**: [Nuxt](https://nuxt.com/)
+- **UI Library**: [PrimeVue](https://primevue.org/)
+- **CSS Framework**: [Tailwind CSS](https://tailwindcss.com/)
+- **Konten**: File Markdown lokal dibaca oleh API internal.
+- **Icons**: [PrimeIcons](https://primeflex.org/primeicons)
 
-# pnpm
-pnpm dev
+---
 
-# yarn
-yarn dev
+## 🚀 Setup & Instalasi Lokal
 
-# bun
-bun run dev
-```
+Untuk menjalankan proyek ini di komputer lokal Anda, ikuti langkah-langkah berikut:
 
-## Production
+1.  **Clone repositori ini:**
 
-Build the application for production:
+    ```bash
+    git clone [https://github.com/](https://github.com/)DimasRizkyFebrian/nuxt-portfolio-blog.git
+    ```
 
-```bash
-# npm
-npm run build
+2.  **Masuk ke direktori proyek:**
 
-# pnpm
-pnpm build
+    ```bash
+    cd nuxt-portfolio-blog
+    ```
 
-# yarn
-yarn build
+3.  **Install semua dependensi:**
 
-# bun
-bun run build
-```
+    ```bash
+    npm install
+    ```
 
-Locally preview production build:
+4.  **Jalankan server development:**
 
-```bash
-# npm
-npm run preview
+    ```bash
+    npm run dev
+    ```
 
-# pnpm
-pnpm preview
+5.  Buka [http://localhost:3000](http://localhost:3000) di browser Anda.
 
-# yarn
-yarn preview
+### Perintah Berguna Lainnya
 
-# bun
-bun run preview
-```
+- **Build untuk produksi (SSR):**
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+  ```bash
+  npm run build
+  ```
+
+- **Generate situs statis (SSG):**
+  ```bash
+  npm run generate
+  ```
