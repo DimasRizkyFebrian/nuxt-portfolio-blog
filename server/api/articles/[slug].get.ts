@@ -29,5 +29,7 @@ export default defineEventHandler((event) => {
     title: data.title,
     description: data.description,
     content: htmlContent, // Kirim konten dalam bentuk HTML
+    date: data.date,
+    image: data.image,
   };
 });
