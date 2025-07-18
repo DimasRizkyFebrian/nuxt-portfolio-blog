@@ -4,7 +4,7 @@ Ini adalah proyek "Hello World!" versi powerful yang saya bangun untuk mempelaja
 
 Proyek ini dibangun dari awal dengan panduan langkah demi langkah, mencakup berbagai rintangan teknis dan solusinya, mulai dari masalah lingkungan development hingga integrasi library UI.
 
-![Screenshot Halaman Utama Proyek](https://imgur.com/06P7aIa)
+![Screenshot Halaman Utama Proyek](./docs/images/homepage-preview.png)
 
 ---
 
