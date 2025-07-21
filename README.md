@@ -46,7 +46,7 @@ Untuk menjalankan proyek ini di komputer lokal Anda, ikuti langkah-langkah berik
 1.  **Clone repositori ini:**
 
     ```bash
-    git clone [https://github.com/](https://github.com/)DimasRizkyFebrian/nuxt-portfolio-blog.git
+    git clone https://github.com/dimasrizkyfebrian/nuxt-portfolio-blog.git
     ```
 
 2.  **Masuk ke direktori proyek:**
